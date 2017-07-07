@@ -1,12 +1,12 @@
 <!-- Modal -->
-<div class="modal fade" id="questionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="answersModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="exampleModalLabel">New question</h4>
+        <h4 class="modal-title" id="exampleModalLabel">New answer</h4>
       </div>
       <div>
-        <%= form_for :question, url: '/questions', html: { class: 'form' } do %>
+        <%= form_for :answer, url: '/answers', html: { class: 'form' } do %>
         <div class="modal-body">
           <div class="form-group">
             <label for="exampleInputEmail1">Email address</label>
@@ -14,8 +14,8 @@
             <small id="emailHelp" class="form-text text-muted"></small>
           </div>
           <div class="form-group">
-            <label for="exampleTextarea">Question</label>
-            <textarea name="question_body" class="form-control" id="exampleTextarea" rows="3" placeholder="Ask a question" required></textarea>
+            <label for="exampleTextarea">Answers</label>
+            <textarea name="answers_body" class="form-control" id="exampleTextarea" rows="3" placeholder="Enter your answer" required></textarea>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
