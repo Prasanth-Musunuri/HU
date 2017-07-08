@@ -1,35 +1,21 @@
-<div class="media">
-  <div class="media-left">
-    <img src="https://ng-bootstrap.github.io/img/logo.svg"
-      class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">user@email.com asked</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a class="btn btn-primary btn-sm" href="/questions/12" role="button">View answers</a>
-  </div>
+<div class="lead">
+  <h3> The universe is the totality of everything that exists, has existed, or
+    ever will exist
+  </h3>
+  <p> This Q&A site is dedicated about history of universe
+  </p>
+</div>
 
-</div>
 <div class="media">
+  <% @question.each do |q| %>
   <div class="media-left">
     <img src="https://ng-bootstrap.github.io/img/logo.svg"
       class="media-object" style="width:60px">
   </div>
   <div class="media-body">
-    <h4 class="media-heading">user@email.com asked</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <h4 class="media-heading"><%= q.email %> asked</h4>
+    <p><%= q.body %></p>
     <a class="btn btn-primary btn-sm" href="/questions/12" role="button">View answers</a>
   </div>
-</div>
-<div class="media">
-  <div class="media-left">
-    <img src="https://ng-bootstrap.github.io/img/logo.svg"
-      class="media-object" style="width:60px">
-  </div>
-  <div class="media-body">
-    <h4 class="media-heading">user@email.com asked</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    <a class="btn btn-primary btn-sm" href="/questions/12" role="button">View answers</a>
-  </div>
-</div>
+  <% end %>
 </div>
