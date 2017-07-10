@@ -14,7 +14,8 @@
   </div>
   <div class="media-body">
     <h4 class="media-heading"><%= q.email %> asked</h4>
-    <p><%= q.body %></p>
+      <div><%= time_ago_in_words q.created_at %> ago</div>
+      <div><%= q.body %></div>
     <a class="btn btn-primary btn-sm" href="/questions/12" role="button">View answers</a>
   </div>
   <% end %>
